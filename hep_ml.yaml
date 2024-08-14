@@ -1,0 +1,35 @@
+name: hep_ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - datrie
+  - dill
+  - ipython
+  - jupyter
+  - jupyterlab
+  - lightgbm
+  - luigi
+  - matplotlib
+  - notebook
+  - numpy
+  - pandas
+  - pip
+  - pyarrow
+  - root
+  - scikit-learn
+  - scipy
+  - seaborn
+  - six
+  - xrootd
+  - pip:
+    - cabinetry
+    - hep-ml
+    - root-numpy
+    - root-pandas
+    - rootpy
+    - snakemake
+    - tqdm
+    - uncertainties
+    - xgboost
+
