@@ -1,4 +1,8 @@
-echo "venv/" > .gitignore
-echo "__pycache__/" >> .gitignore
-echo "*.pyc" >> .gitignore
-echo ".DS_Store" >> .gitignore  # For macOS users
+venv
+__pycache__
+*.pyc
+.DS_Store  # For macOS users
+.ipynb_checkpoints
+.out
+.error
+.log
