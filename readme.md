@@ -15,7 +15,6 @@ Version 1.0.1
 ## Procedure
 
 ### Dataset
-
 First, it is important to have a dataset on which we want to apply our BDT.
 It is composed of two slightly different sets containing the same columns.
 We merge together these sets to have our dataset, which is saved in a `.pkl` file
@@ -29,26 +28,26 @@ python create_pkl.py -r x -f filename
 ```
 
 #### Remarks
-
 * The dataset has a _weight_ column that will be useful later, as the BDT focuses 
-on ditributions shapes, and therefore this extra piece of information can be 
+on distributions shapes, and therefore this extra piece of information can be 
 decisive in the classification.
+* The rows are shuffled even though it is not necessary for this first step, 
+but it will be a key feature when the BDT will be applied on another dataset.
 
 
 
 ### BDT
-Then, the user can start playing with all aspects surrounding BDTs.
+Then, the user can start playing with several aspects surrounding BDTs.
 In the notebook `bdt.ipynb`, the user can have an interactive experience.
+A model will be fit on the data, and the reproducibility, as well as the BDT performance
+will be evaluated.
 
 #### Remarks
-
 * Jupyter notebooks can be opened by typing the command `jupyter notebook`
 in the terminal, such that the program will instantiate a local server at _localhost:8888_, 
 and the Jupyter Notebook interface will pop up in a browser window.
+* The package `lightgbm` will have to be installed.
 
-
-
-### Optimization
 
 
 

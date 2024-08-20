@@ -1,3 +1,7 @@
+#############################
+## author: G. Räuber, 2024 ##
+#############################
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -41,7 +45,7 @@ df_1['weight'] = 1
 if args.rows % 2 == 1:
     num_rows += 1
 
-# Create the columns
+# Create the columns, and try several values for the variable g
 data_2 = {
     'a': np.random.normal(loc=6.5, scale=1, size=num_rows),
     'b': np.random.normal(loc=0.8, scale=1, size=num_rows),
@@ -49,7 +53,9 @@ data_2 = {
     'd': np.random.poisson(lam=489.0, size=num_rows),
     'e': np.random.exponential(scale=3.2, size=num_rows),
     'f': np.random.exponential(scale=0.8, size=num_rows),
-    'g': np.random.binomial(505, 0.49, size=num_rows),
+    #'g': np.random.binomial(505, 0.49, size=num_rows),
+    #'g': np.random.binomial(505, 0.47, size=num_rows),
+    'g': np.random.binomial(505, 0.45, size=num_rows),
     'h': np.random.rayleigh(scale=1.4, size=num_rows),
     'i': np.random.laplace(loc=0.5, scale=1.3, size=num_rows),
     'j': np.random.power(3.9, size=num_rows),
