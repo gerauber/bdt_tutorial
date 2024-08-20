@@ -8,6 +8,10 @@ BDTs are multivariate analysis techniques utilizing machine learning algorithms.
 They are employed to identify patterns and use this knowledge to predict 
 outcomes for comparable, but unknown datasets.
 
+This code follows the style convention established in the [PEP8 document](https://peps.python.org/pep-0008/).
+
+Version 1.0.1
+
 ## Procedure
 
 ### Dataset
@@ -48,8 +52,3 @@ and the Jupyter Notebook interface will pop up in a browser window.
 
 
 
-
-
-## Good practices
-
-This code follows the style convention established in the [PEP8 document](https://peps.python.org/pep-0008/).
