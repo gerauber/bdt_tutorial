@@ -79,8 +79,8 @@ _outputname_, such as the user executes the following command:
 ```
 python correlations.py -f filename -j jsonname -o outputname
 ```
-![Correlation matrix, cat 1](../optimized_bdt/corr_mat_cat1.png) 
-![Correlation matrix, cat 2](../optimized_bdt/corr_mat_cat2.png) 
+![Correlation matrix, cat 1](optimized_bdt/corr_mat_cat1.png) 
+![Correlation matrix, cat 2](optimized_bdt/corr_mat_cat2.png) 
 
 
 Ranking can be obtained in a similar manner, by using `ranking.py`. The 
