@@ -95,7 +95,6 @@ python ranking.py -f filename -j jsonname -o outputname -m method
 ![Basic ranking](optimized_bdt/figures/rank_basic.png) 
 ![Basic ranking](optimized_bdt/figures/rank_advanced.png) 
 ![Basic ranking](optimized_bdt/figures/rank_rfe.png) 
-![Basic ranking](optimized_bdt/figures/rank_rfe_zoom.png) 
 
 
 Finally, an optimization of the hyperparameters can be done by using `hyperparameters.py`.
