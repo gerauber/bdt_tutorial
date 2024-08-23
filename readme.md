@@ -51,7 +51,7 @@ A model will be fit on the data, and the reproducibility, as well as the BDT per
 will be evaluated.
 
 
-![ROC curve](basic_bdt/ROC_curve.png =400x)  
+![ROC curve](basic_bdt/ROC_curve.png)  
 ![Overfitting](basic_bdt/Overfitting_lin.png) 
 ![Classifier](basic_bdt/Classifier_stack_lin.png) 
 
