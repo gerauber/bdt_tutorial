@@ -33,7 +33,7 @@ Therefore, the user has to execute:
 python create_pkl.py -r x -f filename
 ```
 
-![dataset](dataset/dataset_2classes_features.png)  
+![dataset](dataset/figures/dataset_2classes_features.png)  
 
 #### Remarks
 * The dataset has a _weight_ column that will be useful later, as the BDT focuses 
@@ -51,9 +51,9 @@ A model will be fit on the data, and the reproducibility, as well as the BDT per
 will be evaluated.
 
 
-![ROC curve](basic_bdt/ROC_curve.png)  
-![Overfitting](basic_bdt/Overfitting_lin.png) 
-![Classifier](basic_bdt/Classifier_stack_lin.png) 
+![ROC curve](basic_bdt/figures/ROC_curve.png)  
+![Overfitting](basic_bdt/figures/Overfitting_lin.png) 
+![Classifier](basic_bdt/figures/Classifier_stack_lin.png) 
 
 #### Remarks
 * Jupyter notebooks can be opened by typing the command `jupyter notebook`
@@ -79,8 +79,8 @@ _outputname_, such as the user executes the following command:
 ```Shell
 python correlations.py -f filename -j jsonname -o outputname
 ```
-![Correlation matrix, cat 1](optimized_bdt/corr_mat_cat1.png) 
-![Correlation matrix, cat 2](optimized_bdt/corr_mat_cat2.png) 
+![Correlation matrix, cat 1](optimized_bdt/figures/corr_mat_cat1.png) 
+![Correlation matrix, cat 2](optimized_bdt/figures/corr_mat_cat2.png) 
 
 
 Ranking can be obtained in a similar manner, by using `ranking.py`. The 
@@ -92,10 +92,10 @@ python ranking.py -f filename -j jsonname -o outputname -m method
 ```
 
 
-![Basic ranking](optimized_bdt/rank_basic.png) 
-![Basic ranking](optimized_bdt/rank_advanced.png) 
-![Basic ranking](optimized_bdt/rank_rfe.png) 
-![Basic ranking](optimized_bdt/rank_rfe_zoom.png) 
+![Basic ranking](optimized_bdt/figures/rank_basic.png) 
+![Basic ranking](optimized_bdt/figures/rank_advanced.png) 
+![Basic ranking](optimized_bdt/figures/rank_rfe.png) 
+![Basic ranking](optimized_bdt/figures/rank_rfe_zoom.png) 
 
 
 Finally, an optimization of the hyperparameters can be done by using `hyperparameters.py`.
