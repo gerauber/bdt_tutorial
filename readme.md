@@ -76,7 +76,7 @@ dictionary.
 Correlations are computed by `correlations.py`, for which the user has to 
 specify a dataset _filename_, a dictionary name _jsonname_ and an output name 
 _outputname_, such as the user executes the following command:
-```
+```shell
 python correlations.py -f filename -j jsonname -o outputname
 ```
 ![Correlation matrix, cat 1](optimized_bdt/corr_mat_cat1.png) 
