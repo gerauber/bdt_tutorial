@@ -2,11 +2,15 @@
 
 ## General comments
 
-`bdt_tutorial` is a a set of scripts and notebooks to familiarise you with 
-all aspects related to Boosted Decision Trees (BDTs).
+After helping master's students to familiarize themselves with 
+all aspects related to Boosted Decision Trees (BDTs), 
+I thought it would actually be more useful to make a github project accessible to everyone.
+And this is what the scripts and notebooks contained in `bdt_tutorial` are all about.
 BDTs are multivariate analysis techniques utilizing machine learning algorithms.
 They are employed to identify patterns and use this knowledge to predict 
 outcomes for comparable, but unknown datasets.
+
+
 
 Setup a python env with the required packages:
 ```
