@@ -23,7 +23,7 @@ The colors used throughout this tutorial were generated using the
 This code follows the style convention established in the 
 [PEP8 document](https://peps.python.org/pep-0008/).
 
-Version 1.1.3
+Version 1.2.1
 
 ## Procedure
 
@@ -76,8 +76,6 @@ will be evaluated.
 The user can then experience the application of a BDT method on another 
 dataset, by using the notebook `apply_bdt.ipynb`. Here, no performance
 is assessed as it is assumed that the categories are not known.
-
-
 
 ##### Dataset 2
 
