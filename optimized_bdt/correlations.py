@@ -6,6 +6,8 @@ import argparse
 import pandas as pd
 import numpy as np
 import json
+import pickle
+import os.path
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -112,6 +114,12 @@ for mat in [mat_cat1, mat_cat2]:
 with open(f"{args.outname}.json", 'w') as json_file:
     json.dump(dict_values, json_file, indent=4)
 
+# Call the color map
+if os.path.exists('colours.pkl'):
+    with open('colours.pkl', 'rb') as f:
+        custom_cmap = pickle.load(f)
+else:
+    custom_cmap = 'coolwarm'
 
 # Plot the correlation matrices
 def correlation_matrix(corrmat, filename, plot_title='', cbaryesno=True,
@@ -128,21 +136,21 @@ def correlation_matrix(corrmat, filename, plot_title='', cbaryesno=True,
     if limit_val == 0:
         fig = sns.heatmap(corrmat,
                           annot=True, fmt='.2f', vmin=-1, vmax=1, center=0,
-                          linewidths=1, cmap='coolwarm', ax=ax,
+                          linewidths=1, cmap=custom_cmap, ax=ax,
                           annot_kws={'size': in_fontsize},
                           cbar_kws={"orientation": "vertical", "pad": 0.01},
                           cbar=cbaryesno)
     else:
         fig = sns.heatmap(corrmat, mask=abs(corrmat) < limit_val,
                           annot=True, fmt='.2f', vmin=-1, vmax=1, center=0,
-                          linewidths=1, cmap='coolwarm', ax=ax,
+                          linewidths=1, cmap=custom_cmap, ax=ax,
                           annot_kws={'size': in_fontsize},
                           cbar_kws={"orientation": "vertical", "pad": 0.01},
                           cbar=cbaryesno)
 
         sns.heatmap(corrmat, mask=abs(corrmat) >= limit_val, annot=False,
                     fmt='.2f', vmin=-1, vmax=1, center=0,
-                    linewidths=1, cmap='coolwarm', cbar=False)
+                    linewidths=1, cmap=custom_cmap, cbar=False)
 
     if cbaryesno:
         cbar = fig.collections[0].colorbar
