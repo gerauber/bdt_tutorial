@@ -27,6 +27,8 @@ Version 1.2.1
 
 ## Procedure
 
+---------
+
 ### Dataset
 First, it is important to have a dataset on which we want to apply our BDT.
 It is composed of two slightly different sets containing the same columns.
@@ -51,7 +53,7 @@ decisive in the classification.
 * The rows are shuffled even though it is not necessary for this first step, 
 but it will be a key feature when the BDT will be applied on another dataset.
 
-
+---------
 
 ### Basic BDT
 Then, the user can start playing with several aspects surrounding BDTs.
@@ -94,6 +96,8 @@ in the terminal, such that the program will instantiate a local server at _local
 and the Jupyter Notebook interface will pop up in a browser window.
 * The package `lightgbm` will have to be installed.
 
+
+---------
 
 ### Optimized BDT
 In a view of giving a comprehensive set of tools related to BDTs, 
@@ -147,6 +151,10 @@ has to be executed:
 python hyperparameters.py -f filename -j jsonname -o outputname -m method
 ```
 
+##### Comparison of hyperparameters
+![Comparison of hyperparameters](optimized_bdt/figures/compare_hyperparams.png) 
+
+
 #### Remarks
 * Correlations are usually computed separately for both categories, but it might be
 also useful to compute the correlation for the whole dataset
@@ -163,6 +171,3 @@ also useful to compute the correlation for the whole dataset
 	* a random ( *random* ) search
 	*  a method provided by the Optuna package ( *optuna* )
 		* Run `pip install optuna` to have access to this method
-
-##### Comparison of hyperparameters
-![Comparison of hyperparameters](optimized_bdt/figures/compare_hyperparams.png) 
