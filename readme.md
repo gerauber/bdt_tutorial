@@ -40,6 +40,8 @@ Therefore, the user has to execute:
 python create_pkl.py -r x -f filename
 ```
 
+##### Dataset
+
 ![dataset](dataset/figures/dataset_2classes_features.png)  
 
 #### Remarks
@@ -75,7 +77,14 @@ The user can then experience the application of a BDT method on another
 dataset, by using the notebook `apply_bdt.ipynb`. Here, no performance
 is assessed as it is assumed that the categories are not known.
 
-##### Classifier
+
+
+##### Dataset 2
+
+![dataset](dataset/figures/dataset_2classes_2_features.png)  
+
+
+##### Classifier 2
 
 ![Classifier](basic_bdt/figures/Classifier_2_stack_lin.png) 
 
