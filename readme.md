@@ -71,6 +71,16 @@ will be evaluated.
 
 ![Classifier](basic_bdt/figures/Classifier_stack_lin.png) 
 
+The user can then experience the application of a BDT method on another 
+dataset, by using the notebook `apply_bdt.ipynb`. Here, no performance
+is assessed as it is assumed that the categories are not known.
+
+##### Classifier
+
+![Classifier](basic_bdt/figures/Classifier_2_stack_lin.png) 
+
+
+
 #### Remarks
 * Jupyter notebooks can be opened by typing the command `jupyter notebook`
 in the terminal, such that the program will instantiate a local server at _localhost:8888_, 
