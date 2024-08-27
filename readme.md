@@ -5,20 +5,23 @@
 After helping master's students to familiarize themselves with 
 all aspects related to Boosted Decision Trees (BDTs), 
 I thought it would actually be more useful to make a github project accessible to everyone.
+
 And this is what the scripts and notebooks contained in `bdt_tutorial` are all about.
 BDTs are multivariate analysis techniques utilizing machine learning algorithms.
 They are employed to identify patterns and use this knowledge to predict 
 outcomes for comparable, but unknown datasets.
 
-
-
-Setup a python env with the required packages:
+It is recommended to setup a python environment with the required packages:
 ```
 python3 -m venv venv
 python3 -m pip install -r requirements.txt
 ```
 
-This code follows the style convention established in the [PEP8 document](https://peps.python.org/pep-0008/).
+The colors used throughout this tutorial were generated using the
+[Color Palette Creator](https://github.com/gerauber/color_palette_creator)
+
+This code follows the style convention established in the 
+[PEP8 document](https://peps.python.org/pep-0008/).
 
 Version 1.1.3
 
