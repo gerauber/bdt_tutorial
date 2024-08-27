@@ -20,7 +20,7 @@ python3 -m pip install -r requirements.txt
 
 This code follows the style convention established in the [PEP8 document](https://peps.python.org/pep-0008/).
 
-Version 1.1.2
+Version 1.1.3
 
 ## Procedure
 
