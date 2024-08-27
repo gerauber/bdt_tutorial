@@ -57,9 +57,18 @@ In the notebook `bdt.ipynb`, the user can have an interactive experience.
 A model will be fit on the data, and the reproducibility, as well as the BDT performance
 will be evaluated.
 
+##### ROC curve
 
-![ROC curve](basic_bdt/figures/ROC_curve.png)  
+![ROC curve](basic_bdt/figures/ROC_curve.png) 
+
+
+##### Overfitting
+ 
 ![Overfitting](basic_bdt/figures/Overfitting_lin.png) 
+
+
+##### Classifier
+
 ![Classifier](basic_bdt/figures/Classifier_stack_lin.png) 
 
 #### Remarks
@@ -87,6 +96,7 @@ _outputname_, such as the user executes the following command:
 ```Shell
 python correlations.py -f filename -j jsonname -o outputname
 ```
+
 ![Correlation matrix, cat 1](optimized_bdt/figures/corr_mat_cat1.png) 
 ![Correlation matrix, cat 2](optimized_bdt/figures/corr_mat_cat2.png) 
 
