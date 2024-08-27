@@ -74,7 +74,8 @@ In a view of giving a comprehensive set of tools related to BDTs,
 a separate folder has been added to the basic notebook provided in `basic_bdt/`.
 In this case, the user can optimize the number of features, by looking at both
 their correlations and their ranking, and the hyperparameters.
-Here, a couple of scripts are provided to play with these notions.
+Here, a couple of scripts are provided to play with these notions. 
+All main commands are summarized in `optimized_bdt/subscript.sh`.
 
 First, the user can change the BDT input in `input.py`, where the inputs 
 (more specifically the features and the hyperparameters) are listed in a
