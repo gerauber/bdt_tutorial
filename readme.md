@@ -97,7 +97,11 @@ _outputname_, such as the user executes the following command:
 python correlations.py -f filename -j jsonname -o outputname
 ```
 
+##### Correlation matrix of Category 1
+
 ![Correlation matrix, cat 1](optimized_bdt/figures/corr_mat_cat1.png) 
+
+##### Correlation matrix of Category 2
 ![Correlation matrix, cat 2](optimized_bdt/figures/corr_mat_cat2.png) 
 
 
@@ -109,8 +113,13 @@ command has to be executed:
 python ranking.py -f filename -j jsonname -o outputname -m method
 ```
 
+##### Basic ranking
 ![Basic ranking](optimized_bdt/figures/rank_basic.png) 
+
+##### Advanced ranking
 ![Basic ranking](optimized_bdt/figures/rank_advanced.png) 
+
+##### RFE selection
 ![Basic ranking](optimized_bdt/figures/rank_rfe.png) 
 
 
@@ -138,4 +147,5 @@ also useful to compute the correlation for the whole dataset
 	*  a method provided by the Optuna package ( *optuna* )
 		* Run `pip install optuna` to have access to this method
 
-![Basic ranking](optimized_bdt/figures/compare_hyperparams.png) 
+##### Comparison of hyperparameters
+![Comparison of hyperparameters](optimized_bdt/figures/compare_hyperparams.png) 
