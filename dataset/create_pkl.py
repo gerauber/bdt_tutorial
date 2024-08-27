@@ -53,8 +53,8 @@ data_2 = {
     'd': np.random.poisson(lam=489.0, size=num_rows),
     'e': np.random.exponential(scale=3.2, size=num_rows),
     'f': np.random.exponential(scale=0.8, size=num_rows),
-    #'g': np.random.binomial(505, 0.49, size=num_rows),
-    #'g': np.random.binomial(505, 0.47, size=num_rows),
+    # 'g': np.random.binomial(505, 0.49, size=num_rows),
+    # 'g': np.random.binomial(505, 0.47, size=num_rows),
     'g': np.random.binomial(505, 0.45, size=num_rows),
     'h': np.random.rayleigh(scale=1.4, size=num_rows),
     'i': np.random.laplace(loc=0.5, scale=1.3, size=num_rows),
@@ -80,6 +80,10 @@ for i, column in enumerate(df_2.columns):
     axes[i].set_ylabel(f'Counts / {(high-low)/nbbins:<0.2f}')
     axes[i].ticklabel_format(style='sci', axis='y', scilimits=(0, 0))
     axes[i].legend()
+
+    # Set grid
+    axes[i].grid(True, color='whitesmoke')
+    axes[i].set_axisbelow(True)
 
 for i in range(10, 12):
     axes[i].axis('off')

@@ -95,7 +95,6 @@ command has to be executed:
 python ranking.py -f filename -j jsonname -o outputname -m method
 ```
 
-
 ![Basic ranking](optimized_bdt/figures/rank_basic.png) 
 ![Basic ranking](optimized_bdt/figures/rank_advanced.png) 
 ![Basic ranking](optimized_bdt/figures/rank_rfe.png) 
@@ -125,3 +124,4 @@ also useful to compute the correlation for the whole dataset
 	*  a method provided by the Optuna package ( *optuna* )
 		* Run `pip install optuna` to have access to this method
 
+![Basic ranking](optimized_bdt/figures/compare_hyperparams.png) 
