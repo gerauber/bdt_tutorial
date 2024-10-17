@@ -27,7 +27,6 @@ Version 1.2.1
 
 ## Procedure
 
----------
 
 ### Dataset
 First, it is important to have a dataset on which we want to apply our BDT.
